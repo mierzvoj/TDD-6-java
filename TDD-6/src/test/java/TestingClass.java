@@ -26,4 +26,11 @@ public class TestingClass {
         Assertions.assertEquals(result, "III");
     }
 
+    @Test
+    public void given_4_test_IV() {
+        int ar = 4;
+        String result = arabicToRoman(ar);
+        Assertions.assertEquals(result, "IV");
+    }
+
 }
