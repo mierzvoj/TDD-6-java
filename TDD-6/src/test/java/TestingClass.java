@@ -92,4 +92,17 @@ public class TestingClass {
         String result = arabicToRoman(ar);
         Assertions.assertEquals(result, "D");
     }
+    @Test
+    public void given_900_test_CM() {
+        int ar = 900;
+        String result = arabicToRoman(ar);
+        Assertions.assertEquals(result, "CM");
+    }
+
+    @Test
+    public void given_1000_test_M() {
+        int ar = 1000;
+        String result = arabicToRoman(ar);
+        Assertions.assertEquals(result, "M");
+    }
 }
