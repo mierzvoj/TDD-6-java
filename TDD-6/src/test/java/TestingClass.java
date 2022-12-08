@@ -45,5 +45,24 @@ public class TestingClass {
         String result = arabicToRoman(ar);
         Assertions.assertEquals(result, "IX");
     }
+    @Test
+    public void given_10_test_X() {
+        int ar = 10;
+        String result = arabicToRoman(ar);
+        Assertions.assertEquals(result, "X");
+    }
+    @Test
+    public void given_40_test_XL() {
+        int ar = 40;
+        String result = arabicToRoman(ar);
+        Assertions.assertEquals(result, "XL");
+    }
+
+    @Test
+    public void given_50_test_L() {
+        int ar = 50;
+        String result = arabicToRoman(ar);
+        Assertions.assertEquals(result, "L");
+    }
 
 }
