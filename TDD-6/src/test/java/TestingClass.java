@@ -39,5 +39,11 @@ public class TestingClass {
         String result = arabicToRoman(ar);
         Assertions.assertEquals(result, "V");
     }
+    @Test
+    public void given_9_test_IX() {
+        int ar = 9;
+        String result = arabicToRoman(ar);
+        Assertions.assertEquals(result, "IX");
+    }
 
 }
