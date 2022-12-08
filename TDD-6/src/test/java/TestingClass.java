@@ -78,4 +78,11 @@ public class TestingClass {
         String result = arabicToRoman(ar);
         Assertions.assertEquals(result, "C");
     }
+
+    @Test
+    public void given_400_test_CD() {
+        int ar = 400;
+        String result = arabicToRoman(ar);
+        Assertions.assertEquals(result, "CD");
+    }
 }
