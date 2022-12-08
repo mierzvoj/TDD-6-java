@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public enum Roman {
 
-    I(1), IV(4);
+    I(1), IV(4), V(5);
 
     private int value;
 
