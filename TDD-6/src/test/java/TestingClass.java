@@ -65,4 +65,10 @@ public class TestingClass {
         Assertions.assertEquals(result, "L");
     }
 
+    @Test
+    public void given_90_test_XC() {
+        int ar = 90;
+        String result = arabicToRoman(ar);
+        Assertions.assertEquals(result, "XC");
+    }
 }
