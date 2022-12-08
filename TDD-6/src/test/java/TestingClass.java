@@ -85,4 +85,11 @@ public class TestingClass {
         String result = arabicToRoman(ar);
         Assertions.assertEquals(result, "CD");
     }
+
+    @Test
+    public void given_500_test_D() {
+        int ar = 500;
+        String result = arabicToRoman(ar);
+        Assertions.assertEquals(result, "D");
+    }
 }
