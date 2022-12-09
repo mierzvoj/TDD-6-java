@@ -1,12 +1,11 @@
-import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import static org.example.Main.arabicToRoman;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TestingClass {
+public class Tests {
     @Test
     public void given_1_test_I() {
         int ar = 1;
