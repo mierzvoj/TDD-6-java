@@ -5,6 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>maven-jacoco</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <groupId>codemining</groupId>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
