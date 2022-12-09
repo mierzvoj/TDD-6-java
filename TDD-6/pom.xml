@@ -3,18 +3,8 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>codes.hubertwo.maven.jacoco</groupId>
     <artifactId>maven-jacoco</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <url>https://hubert.codes</url>
-    <repositories>
-        <repository>
-            <id>hubert-codes-maven-jacoco</id>
-            <url>https://github.com/HubertWo/hubert-codes-maven-jacoco</url>
-        </repository>
-    </repositories>
-
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -33,7 +23,6 @@
 
     <build>
         <plugins>
-            <!-- Compiler plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -43,13 +32,11 @@
                     <target>11</target>
                 </configuration>
             </plugin>
-            <!-- For unit tests -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
             </plugin>
-            <!-- For integration tests -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
@@ -63,13 +50,11 @@
                     </execution>
                 </executions>
             </plugin>
-            <!-- Code coverage -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.7</version>
                 <executions>
-                    <!-- Coverage for unit tests -->
                     <execution>
                         <id>pre-unit-tests</id>
                         <goals>
@@ -83,8 +68,7 @@
                             <goal>report</goal>
                         </goals>
                     </execution>
-                    <!-- Coverage for integration tests -->
-                    <execution>
+                     <execution>
                         <id>pre-integration-tests</id>
                         <phase>pre-integration-test</phase>
                         <goals>
@@ -102,6 +86,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>
